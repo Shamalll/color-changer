@@ -5,19 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Changer</title>
     <link rel="stylesheet" href="app/styles.css">
-    <script>
-        function bodyColor(color){
-            document.body.style.background = color;
-        }
-        function headingColor(color){
-            document.getElementById("heading").style.background = color;
-        }
-    </script>
+    <script src="App/scripts.js"></script>
 </head>
-<body>
+<body id = "body">
     <div class="box">
         <h1 id= "heading">Click to change the button!</h1>
-        <button type= "button" onclick="bodyColor('indigo');">Change me</button>
+        <button id= "button" onclick="bodyColor('red');">Change me</button>
     <p id="output_text">The color was changed to this!</p>
 
     </div>
